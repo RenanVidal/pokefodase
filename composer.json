@@ -1,0 +1,18 @@
+{
+    "name": "renanvidal/pokefodase",
+    "description": "Yet Another Pokemon Project",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Renanvidal\\Pokefodase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renan Vidal",
+            "email": "rvidal.rvr@gmail.com"
+        }
+    ],
+    "require": {}
+}
