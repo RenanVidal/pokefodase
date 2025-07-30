@@ -4,14 +4,8 @@ namespace Pokefodase;
 
 final class Game
 {
-    public function testFunction()
+    public function run()
     {
-        if (1 == 1) {
-            $do = 123;
-
-            return 123;
-        }
-
-        return 123;
+        return 'Game is running';
     }
 }
