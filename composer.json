@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Renanvidal\\Pokefodase\\": "src/"
+            "Pokefodase\\": "app/"
         }
     },
     "authors": [
@@ -14,5 +14,10 @@
             "email": "rvidal.rvr@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "laravel/pint": "^0.1.2"
+    }
 }

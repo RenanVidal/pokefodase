@@ -1,0 +1,6 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "final_class": true
+    }
+}
