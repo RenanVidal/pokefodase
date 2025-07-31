@@ -13,5 +13,14 @@ final class Trainer
         public string $currentMap,
         public int $activePokemon
     ) {
+        $this->pokemons = array_map(function ($pokemon) {
+            return new \Pokefodase\Pokemon\Pokemon(
+                $pokemon['id'],
+                $pokemon['name'],
+                $pokemon['species'],
+                $pokemon['level'],
+                $pokemon['type']
+            );
+        }, $this->pokemons);
     }
 }

@@ -24,18 +24,21 @@ final class Game
             ],
             'pokemons' => [
                 [
+                    'id'=> uniqid(time()),
                     'name' => 'Cavalo',
                     'species' => 'Rapidash',
                     'level' => 35,
                     'type' => 'Fire',
                 ],
                 [
+                    'id'=> uniqid(time()),
                     'name' => 'Pikachu',
                     'species' => 'Pikachu',
                     'level' => 25,
                     'type' => 'Electric',
                 ],
                 [
+                    'id'=> uniqid(time()),
                     'name' => 'Bulbasaur',
                     'species' => 'Bulbasaur',
                     'level' => 20,
@@ -55,5 +58,9 @@ final class Game
             $trainer['current_map'],
             $trainer['active_pokemon']
         );
+
+        echo ' game started'.PHP_EOL;
+        echo 'Trainer: '.$renanzinTrainer->identifier.PHP_EOL;
+        var_dump($renanzinTrainer);
     }
 }
