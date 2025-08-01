@@ -20,5 +20,5 @@ final class Money
             throw new \InvalidArgumentException('Insufficient funds');
         }
         $this->money -= $amount;
-    }   
+    }
 }

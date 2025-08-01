@@ -9,8 +9,8 @@ final class TrainerCard
         public array $badges,
     ) {
         $this->badges = array_map(
-        fn ($badge) => new Badge($badge['name'], $badge['level']),
-        $this->badges
-       );
+        fn ($badge) => Badge::Earth,
+        $this->badges,
+        );
     }
 }

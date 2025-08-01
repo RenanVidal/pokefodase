@@ -3,6 +3,8 @@
 namespace Pokefodase;
 
 use Pokefodase\Trainer\Trainer;
+use Pokefodase\Trainer\TrainerCard;
+use Pokefodase\Trainer\Wallet\Money;
 
 final class Game
 {
@@ -11,17 +13,14 @@ final class Game
         $trainer = [
             'id' => 87654321,
             'name' => 'Ash Ketchum',
-            'money' => 1000,
-            'badges' => [
-                'Boulder Badge',
-                'Cascade Badge',
-                'Thunder Badge',
-                'Rainbow Badge',
-                'Soul Badge',
-                'Marsh Badge',
-                'Volcano Badge',
-                'Earth Badge',
-            ],
+            'trainerCard' =>  new TrainerCard(
+                new Money(1000),
+                badges: [
+                    'Boulder',
+                    'Cascade',
+                    'Thunder',
+                ]
+            ),
             'pokemons' => [
                 [
                     'id'=> uniqid(time()),
@@ -52,8 +51,7 @@ final class Game
         $renanzinTrainer = new Trainer(
             $trainer['id'],
             $trainer['name'],
-            $trainer['money'],
-            $trainer['badges'],
+            $trainer['trainerCard'],
             $trainer['pokemons'],
             $trainer['current_map'],
             $trainer['active_pokemon']
